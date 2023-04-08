@@ -20,50 +20,38 @@ LinkedIn Resume Generator is a Python project that automates the process of gene
 ## Installation
 
 1. Clone this repository:
+
 git clone https://github.com/yourusername/linkedin-resume-generator.git
 
-
 2. Install the required packages:
+
 pip install selenium google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client openai
 
+3. Download the appropriate ChromeDriver for your system and add it to your PATH variable.
 
-3. Download the appropriate [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) for your system and add it to your PATH variable.
-
-4. Create a `GDriveAuthentication.json` file containing your Google API credentials, and save it in the project folder. Follow the [Google Drive API Python Quickstart](https://developers.google.com/drive/api/v3/quickstart/python) guide to create a new project and obtain the credentials.
-
-5. Get an OpenAI API key by signing up for the [OpenAI API](https://be
-The script will prompt you to select jobs, generate resumes, and save them to Google Drive.
-
-## Contributing
-
-1. Fork the repository.
-2. Create a new branch for your feature or bugfix.
-3. Commit your changes and submit a pull request.
-
-## License
-
-This project is licensed under the MIT License.ta.openai.com/signup/).
-
-6. Set the OpenAI API key as an environment variable:
-export OPENAI_API_KEY=your_api_key_here
-
+4. Create a `credentials.json` file containing your LinkedIn credentials and OpenAI API key, and save it in the project folder. The file should have the following format:
+```json
+{
+    "email": "your_linkedin_email@example.com",
+    "password": "your_linkedin_password",
+    "openai_api_key": "your_openai_api_key"
+}
+5. Follow the Google Drive API Python Quickstart guide to create a new project and obtain the credentials. Save the GDriveAuthentication.json file in the project folder.
 
 ## Usage
 
-1. Modify the `LinkedInResumeGenerator` instantiation in the `__main__` section with your LinkedIn email and password, and the file name containing your prompt text.
+1. Modify the LinkedInResumeGenerator instantiation in the __main__ section with the file name containing your prompt text.
 
 2. Run the script:
+
 python linkedin_resume_generator.py
 
-
-The script will prompt you to select jobs, generate resumes, and save them to Google Drive.
+3.The script will prompt you to select jobs, generate resumes, and save them to Google Drive.
 
 ## Contributing
-
 1. Fork the repository.
 2. Create a new branch for your feature or bugfix.
 3. Commit your changes and submit a pull request.
 
 ## License
-
 This project is licensed under the MIT License.
