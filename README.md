@@ -36,6 +36,8 @@ pip install selenium google-auth google-auth-oauthlib google-auth-httplib2 googl
     "password": "your_linkedin_password",
     "openai_api_key": "your_openai_api_key"
 }
+```
+
 5. Follow the Google Drive API Python Quickstart guide to create a new project and obtain the credentials. Save the GDriveAuthentication.json file in the project folder.
 
 ## Usage
