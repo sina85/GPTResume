@@ -40,6 +40,8 @@ pip install selenium google-auth google-auth-oauthlib google-auth-httplib2 googl
 
 5. Follow the Google Drive API Python Quickstart guide to create a new project and obtain the credentials. Save the GDriveAuthentication.json file in the project folder.
 
+6. Add your resume to the prompt
+
 ## Usage
 
 1. Modify the LinkedInResumeGenerator instantiation in the __main__ section with the file name containing your prompt text.
